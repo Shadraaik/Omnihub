@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="enquire.css">
+</head>
+<body>
+    <div class="enquiry-form-overlay" id="enquiryForm">
+  <div class="enquiry-form-content">
+    <button class="close-button" onclick="hideEnquiryForm()">✕ Close</button>
+    <h2>Enquiry Form</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="enquiry-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <textarea name="message" rows="5" placeholder="Your Enquiry" required></textarea>
+      <button type="submit">Send Enquiry</button>
+    </form>
+  </div>
+</div>
+<script src="enquire.js"></script>
+</body>
+</html>

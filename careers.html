@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="careers.css">
+</head>
+<body>
+    <section class="career-page">
+  <h1>Careers at Omnihub</h1>
+  <p class="career-intro">
+    At Omnihub, we believe in building a culture of innovation, collaboration, and continuous growth. Our team is driven by a shared purpose: empowering clients, inspiring communities, and redefining what's possible through technology and expertise.
+  </p>
+  <p class="career-intro">
+    We value diversity, curiosity, and ambition. Whether you're an experienced professional or just starting your journey, Omnihub offers opportunities to learn, lead, and make an impact.
+  </p>
+  <p class="career-intro">
+    Explore your potential with us and be part of a team where your contributions matter and your ideas shape the future.
+  </p>
+
+  <div class="apply-container">
+    <button class="apply-button" onclick="showApplicationForm()">Apply Now</button>
+  </div>
+
+  <!-- Sliding Application Form Panel -->
+  <div class="application-form-overlay" id="applicationForm">
+    <div class="application-form-content">
+      <button class="close-button" onclick="hideApplicationForm()">✕ Close</button>
+      <h2>Omnihub Application Form</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="application-form">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="_replyto" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="position" placeholder="Position Applied For" required>
+        <textarea name="message" rows="5" placeholder="Tell us why you want to join Omnihub" required></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="careers.js"></script>
+</body>
+</html>
