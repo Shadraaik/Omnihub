@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teleter Logo with Description and Terminology</title>
+  <style>
+    body {
+      background: #fdfdfd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: "Bell MT", Georgia, serif;
+      color: #444;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .tv-outline {
+      position: relative;
+      width: 140px;
+      height: 90px;
+      border: 4px solid #222;
+      border-radius: 20px;
+      background: #ffffff; /* changed to white */
+      box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(255, 204, 0, 0.6); /* outer glow */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible;
+    }
+
+    .turning-on-light {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 28px;
+      height: 28px;
+      background: radial-gradient(circle, rgba(255, 250, 220, 0.85) 0%, rgba(255, 190, 100, 0.35) 50%, rgba(255, 160, 60, 0) 75%);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 2;
+      filter: drop-shadow(0 0 8px rgba(255, 200, 120, 0.6));
+    }
+
+    .button-dots {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      display: flex;
+      gap: 6px;
+      z-index: 3;
+    }
+
+    .dot-small,
+    .dot-big {
+      border-radius: 50%;
+    }
+
+    .dot-small {
+      width: 5px;
+      height: 5px;
+      background-color: #ffbb33;
+    }
+
+    .dot-big {
+      width: 8px;
+      height: 8px;
+      background-color: red;
+    }
+
+    .stand {
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 75px;
+      height: 4px;
+      background: #222;
+      border-radius: 3px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    .teleter-text {
+      font-size: 38px;
+      color: #222;
+      letter-spacing: 1.2px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      user-select: none;
+    }
+
+    .description-container,
+    .terminology {
+      width: 100%;
+      max-width: 900px;
+      padding: 0 20px;
+      margin-bottom: 40px;
+    }
+
+    .description-container {
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .description-container strong {
+      font-weight: 700;
+      font-size: 20px;
+      display: block;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .highlight-live {
+      color: red;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .terminology {
+      text-align: left;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .terminology h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #222;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .terminology p {
+      margin: 10px 0;
+    }
+
+    .term {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .founder-section {
+      font-size: 16px;
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .teleter-text {
+        font-size: 30px;
+      }
+
+      .description-container {
+        font-size: 16px;
+      }
+
+      .description-container strong {
+        font-size: 18px;
+      }
+
+      .terminology {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <div class="tv-outline">
+      <div class="turning-on-light"></div>
+      <div class="button-dots">
+        <div class="dot-small"></div>
+        <div class="dot-big"></div>
+      </div>
+      <div class="stand"></div>
+    </div>
+    <div class="teleter-text">Teleter</div>
+  </div>
+
+  <div class="description-container">
+    <strong>
+      Teleter is a <span class="highlight-live">LIVE</span> video chatting platform that enables direct, real-time paid interaction between users and celebrities, influencers, and notable figures, bridging the gap between fans and the elites through secure and interactive video sessions.
+    </strong>
+    <p>
+      It combines “Tele” from Television and “ter” from Letter to create a unique way to send real-time messages.
+      Whether you want information, advice, or just to say hello, Teleter makes it easy to have personal conversations with your favorite stars.
+    </p>
+  </div>
+
+  <div class="terminology">
+    <h2>Teleter Terminology</h2>
+    <p><span class="term">Telequest</span> – A request sent to someone on Teleter to have a live video chat. It’s how you ask to connect with a celeb, influencer, or expert in real time.</p>
+    <p><span class="term">Telete(s)</span> – The digital coins or credits used on the Teleter platform. Teletes power your conversations and are how you unlock time with the people you admire.</p>
+  </div>
+
+  <div class="founder-section">
+    <p>Founded on the 06th, July 2025 by <strong>Shadrack Yarah I</strong>, who serves as the CEO of Teleter.</p>
+  </div>
+
+</body>
+</html>
